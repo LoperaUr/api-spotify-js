@@ -21,18 +21,15 @@ pedirTokenSpotify().then(function (token) {
       foto.classList.add("img-fluid", "w-100");
       foto.src = cancion.album.images[0].url;
 
+      let nombre = document.createElement("p");
+      nombre.classList.add("text-center", "fw-bold");
+      nombre.textContent = cancion.name;
+
       card.appendChild(foto);
+      card.appendChild(nombre);
       card.appendChild(pista);
       columna.appendChild(card);
       fila.appendChild(columna);
-
-      let nombre = document.createElement("h4");
-      nombre.classList.add("text-center", "fw-bold");
     });
-
-    console.log(canciones.tracks[9]);
-    console.log(canciones.tracks[9].name);
-    console.log(canciones.tracks[9].preview_url);
-    console.log(canciones.tracks[9].album.images[0].url);
   });
 });
