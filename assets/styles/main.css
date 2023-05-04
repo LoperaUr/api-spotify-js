@@ -2,7 +2,6 @@
 
 * {
   font-family: "Fira Mono", monospace;
-  /* background-color: rgb(255, 0, 0); */
 }
 
 .banner {
@@ -15,4 +14,8 @@
 
 .menu {
   background-color: rgb(0, 0, 0);
+}
+
+.tittle {
+  margin-top: 10vh;
 }
