@@ -10,7 +10,7 @@ pedirTokenSpotify().then(function (token) {
       columna.classList.add("col");
 
       let card = document.createElement("div");
-      card.classList.add("card", "h-100", "shadow");
+      card.classList.add("card", "h-100", "shadow", "p-3");
 
       let pista = document.createElement("audio");
       pista.classList.add("w-100");
